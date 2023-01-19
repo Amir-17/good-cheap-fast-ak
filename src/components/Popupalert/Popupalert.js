@@ -3,8 +3,13 @@ import "./Popupalert.css"
 
 const Popupalert =({
     isModalOpened,
-    closeAction}) => {
+    closeAction,
+    setAreCircleChosen}) => {
 
+    const closingPopup = () => {
+        closeAction(false);
+        setAreCircleChosen([false, false, false])
+    }
     return (
         <div 
         className="popup-container"
@@ -21,7 +26,7 @@ const Popupalert =({
         }}
         >
             <div className="alert-message">
-               <header className="alert_header">  <button className="closing_button" onClick={() => closeAction(false)}>X</button></header>
+               <header className="alert_header">  <button className="closing_button" onClick={() => closingPopup()}>X</button></header>
                <p className="message">You can NOT select all three options!</p>
             </div>
            

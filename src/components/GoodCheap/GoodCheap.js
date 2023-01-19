@@ -16,7 +16,7 @@ const GoodCheap = () => {
               <p className="GC_text">
                 Good & Cheap = Slow. High quality software will be produced; however the project tempo will be slow. Other projects will take priority over this project and interrupt its schedule frequently.
               </p>
-              <img className="goodCheap" src='../images/goodCheap.png'></img>
+              <img className="goodCheap" src='../images/goodCheap.png'alt="venn diagram for good and cheap circles"></img>
               </div>
             <footer className="GC_footer">
               <button 

@@ -14,8 +14,8 @@ const FastCheap = () => {
             <h1 className='GC_title'> Fast - Cheap </h1>
             <div className='GC_content'>
               <p className="GC_text">
-                Fast & Cheap = Poor Quality. The project will be done quickly and one a shoe string budget, and you will get what you pay for. Don't expect all of the requrements to be met and expect some bugs and unpredictable behavior because the development team didn't have the time or resources to thoroughly design or test the software. </p>
-              <img className="goodCheap" src='../images/fastCheap.png'></img>
+                Fast & Cheap = Poor Quality. The project will be done quickly and on a shoestring budget, and you will get what you pay for. Don't expect all of the requirements to be met and expect some bugs and unpredictable behavior because the development team didn't have the time or resources to thoroughly design or test the software. </p>
+              <img className="goodCheap" src='../images/fastCheap.png' alt="venn diagram for fast and cheap circles"></img>
               </div>
             <footer className="GC_footer">
               <button 

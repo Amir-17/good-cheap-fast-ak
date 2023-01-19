@@ -51,8 +51,7 @@ const Homepage =() => {
           useEffect(()=> {
             checkButtonDisabled()
           }, [areCircleChosen])
-        
-
+      
        
       
         return (
@@ -60,7 +59,7 @@ const Homepage =() => {
             <div className='container'>
 
               <header className='app_header'> 
-                <img className='gcf_image' src='/images/good-cheap-fast.png' ></img>
+                <img className='gcf_image' src='/images/good-cheap-fast.png' alt="venn diagram for good-fast-cheap options"></img>
               </header>
               <div className='app_body'>
                 <h1 className='app_title'> Pick two options!</h1>
@@ -70,21 +69,21 @@ const Homepage =() => {
                   onClick={()=> selectCircle(0)}
                   > 
                   GOOD 
-                  {areCircleChosen[0] === true && <span>&#10003;</span>}
+                  {areCircleChosen[0] === true && <span style={{color: "#38FF00"}}>&#10003;</span>}
                   </div>
                   <div
                   className={areCircleChosen[1] === true ? 'selected-cheap' : 'circle-cheap'}
                   onClick={()=> selectCircle(1)}
                   > 
                   CHEAP
-                  {areCircleChosen[1] === true  && <span>&#10003;</span>}
+                  {areCircleChosen[1] === true  && <span style={{color: "#38FF00"}}>&#10003;</span>}
                   </div>
                   <div
                   className={areCircleChosen[2] === true ? 'selected-fast' : 'circle-fast'}
                   onClick={()=> selectCircle(2)}
                   > 
                   FAST
-                  {areCircleChosen[2] === true && <span>&#10003;</span>}
+                  {areCircleChosen[2] === true && <span style={{color: "#38FF00"}}>&#10003;</span>}
                   </div>
                 </div>
                 <button 
@@ -96,7 +95,9 @@ const Homepage =() => {
                 </button>
               </div>
             </div>
-          <Popupalert isModalOpened={isAlertModalOpened} closeAction={setIsAlertModalOpened} />
+          <Popupalert isModalOpened={isAlertModalOpened} closeAction={setIsAlertModalOpened}  
+          setAreCircleChosen={setareCircleChosen}
+           />
           </div>
         );
       }

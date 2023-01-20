@@ -8,7 +8,7 @@ const GoodCheap = () => {
     <div className="GoodCheap">
         <div className='GC_container'>
           <header className='GC_header'> 
-            <img className='gcf_image' src='/images/good-cheap-fast.png' ></img>
+            <img className='gcf_image' src='/images/good-cheap-fast.png' alt="venn diagram for good-fast-cheap options"></img>
           </header>
           <div className='GC_body'>
             <h1 className='GC_title'> Good - Cheap </h1>
